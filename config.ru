@@ -1,6 +1,5 @@
 require 'json'
 
-run Names.new
 
 class Names
   
@@ -27,4 +26,5 @@ class Names
 	girls | boys
   end
   
+run Names.new
 end
