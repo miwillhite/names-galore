@@ -11,7 +11,7 @@ class Names
     @response['Content-Type'] = 'application/json'
     @response['Access-Control-Allow-Origin'] = '*' 
     
-    @response.write (fetch_names * @request['n'].to_i).to_json
+    @response.write (fetch_names * @request['n'].to_i || 1).to_json
     
     @response.finish
     
