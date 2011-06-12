@@ -26,5 +26,5 @@ class Names
 	girls | boys
   end
   
-run Names.new
 end
+run Names.new
