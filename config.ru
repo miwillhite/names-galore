@@ -9,7 +9,7 @@ class Names
     
     @response = Rack::Response.new
     @response['Content-Type'] = 'application/json'
-    
+    @response['Access-Control-Allow-Origin'] = '*' 
     
     @response.write fetch_names.to_json
     
