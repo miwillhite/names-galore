@@ -23,7 +23,7 @@ class Names
   def resp
     
     names = fetch_names * @request['n'].to_i 
-    names = names.join('*') if @request['s']
+    names = names.join('`') if @request['s']
     names
 
   end
